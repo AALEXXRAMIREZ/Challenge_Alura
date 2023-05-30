@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Encriptador de Textos</title>
+</head>
+<body> 
+    <header><img src="logoalura.jpg" alt="Logo de Alura">
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="contenedor-botones">
+                <input type="text" id="textoEncriptado" placeholder="Ingrese el texto aquí">
+                <textarea name="resultado" id="textoDesencriptado" placeholder="Resultado"></textarea></textarea>
+                <br>
+                <p>Solo se aceptan letras minúsculas y sin acentos.</p>
+                <br>
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                <button type="button" id="botonDesencriptado">Desencriptar</button>
+                <button type="button" id="botonCopiar">Copiar</button>
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedor-imagen">                
+                <img src="grafico.png.svg" alt="grafico de alura">
+            </div>     
+            <div class="contenedor-subtitulo">
+                <h3>Ningún mensaje encontrado</h3>
+            </div>    
+            <div class="contenedor-parrafo">
+                <p>Ingrese el texto que desea Encriptar o <br> Desencriptar</p>
+            </div>
+        </section>    
+    </main>
+    <footer>
+        By Diego Alexander Ramirez Mesa <br>"Aalexx Ramirez" - G5 ONE
+    </footer> 
+</body>   
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
+
